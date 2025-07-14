@@ -1,38 +1,13 @@
-//DESAFIO 3 ALURA: LOOPS E REPETIÇÕES
+alert('Boas vindas ao jogo do número secreto!');
+let numeroSecreto = 5; 
+let chute = prompt('Escolha um número entre 1 e 10:');
 
-//DESAFIO 1 
-let numeroAlvo = 1;
-
-while (numeroAlvo < 11) {
-    let contador = numeroAlvo++;
-    alert(contador);
-}
-
-//DESAFIO 2
-let numeroAlvo = 10;
-
-while (numeroAlvo > -1) {
-    let contador = numeroAlvo--;
-    console.log(contador);
-    alert(contador);
-}
-
-//DESAFIO 3
-let numeroAlvo = prompt("Diga um número aleatório");
-
-while (numeroAlvo > -1) {
-    let contador = numeroAlvo--;
-    console.log(contador);
-    alert(contador);
-}
-
-//DESAFIO 4
-let numeroAlvo = prompt("Diga um número aleatório.");
-let numeroInicial = 0;
-
-while (numeroInicial <= numeroAlvo) {
-    let contador = numeroInicial++;
-    console.log(contador);
-    alert(contador);
-    
+if (chute == numeroSecreto) {
+    console.log("Isso aí! Você descobriu o número secreto (5). ");
+} else {
+    if(chute > numeroSecreto){
+        alert("O número secreto é menor.");
+    } else {
+        alert("O número secreto é maior.");
+    }
 }
