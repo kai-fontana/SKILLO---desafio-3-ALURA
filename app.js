@@ -1,13 +1,44 @@
-alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto = 5; 
-let chute = prompt('Escolha um número entre 1 e 10:');
+//DESAFIO 01
 
-if (chute == numeroSecreto) {
-    console.log("Isso aí! Você descobriu o número secreto (5). ");
-} else {
-    if(chute > numeroSecreto){
-        alert("O número secreto é menor.");
-    } else {
-        alert("O número secreto é maior.");
-    }
+//let numeroInicial = 1;
+//let numeroAlvo = 10;
+
+//while (numeroInicial <= 11) {
+//    let contador = numeroInicial++;
+//    alert(contador);
+//}
+
+
+
+//DESAFIO 02
+
+//let numeroInicial= 10;
+//let numeroAlvo = 0;
+
+//while(numeroInicial >= 0) {
+//    let contador = numeroInicial--;
+//    alert(contador);
+//}
+
+//DESAFIO 03
+
+//let numeroAlvo = 0;
+//let numeroInicial = prompt("Diga um número aleatório");
+
+//while (numeroInicial >= numeroAlvo) {
+//    let contador = numeroInicial--;
+//    console.log(contador);
+//    alert(contador);
+//}
+
+//DESAFIO 04
+
+let numeroInicial = 0;
+let numeroAlvo = prompt("Diga um número aleatório:");
+
+while(numeroInicial <= numeroAlvo) {
+    let contador = numeroInicial++;
+    console.log(contador);
+    alert(contador);
 }
+
